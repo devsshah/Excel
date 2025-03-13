@@ -1,0 +1,15 @@
+# Ignore environment variables (Security Risk)
+backend/.env
+
+# Ignore node modules (Avoid large files)
+node_modules/
+
+# Ignore build artifacts (If using React/Vite for frontend)
+frontend/build/
+frontend/dist/
+
+# Ignore system & editor files
+.DS_Store
+.vscode/
+*.log
+*.cache
