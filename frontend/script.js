@@ -32,14 +32,15 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
         query: document.getElementById('query').value
     };
 
-    try {
-        const response = await fetch('http://localhost:3000/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        });
+   try {
+    const response = await fetch('https://excel-9apf.onrender.com/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+    });
+
 
         if(response.ok) {
             alert('Message sent successfully!');
